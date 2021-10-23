@@ -4,4 +4,4 @@
 
 Voici les commandes que j'ai trouvé pour faire crash une VM : 
 
-- ```sudo dd if=/dev/zero of=/dev/sda ```
+- ```sudo dd if=/dev/zero of=/dev/sda ```. Celle-ci permet de remplacer tout les dossiers et fichiers se trouvant dans le dossier /dev/ de notre VM par des 0. 
