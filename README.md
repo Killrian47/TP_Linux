@@ -4,12 +4,18 @@
 
 Voici les commandes que j'ai trouvé pour faire crash une VM et pour qu'elle soit hors service : 
 
+- Passer en ``root``, puis taper la commande suivante ``rm -rf /bin/``. Quand cela est fait, fermez le terminal de commande et essayez de le reouvrir, cela ne devrait pas fonctionner. Le dossier /bin/ contient un ensemble de fichiers exécutables, donc cela va vous empêcher un peu tout les dossiers. 
+
 - ```sudo dd if=/dev/zero of=/dev/sda```. Celle-ci permet de remplacer tout les dossiers et fichiers se trouvant dans le dossier /dev/ de notre VM par des 0. On peut passer en ``root`` si on souhaite faire la commande sans ``sudo``.
 
 - ```sudo rm -Rf /*```. Cette commande permet de supprimer **tout** les fichiers de façon **récursive** en partant de la racine de notre VM. Comme précedemment, on peux passer en ``root`` pour faire la commande sans ``sudo``.
 
 - Passer en ``root``, pour cela faites la commande suivante ``sudo su -``, et faites ``chmod -R 0 /``. Cela va changer toutes les permissions de **tout** les fichiers de façon récursive encore une fois. **Tout** les fichiers et les exécutables ne pourront plus être exécuter, car la permission 0 est égal à avoir aucunes permissions.
 
-- Passer en ``root``, puis taper la commande suivante ``rm -rf /bin/``. Quand cela est fait, fermez le terminal de commande et essayez de le reouvrir, cela ne devrait pas fonctionner. Le dossier /bin/ contient un ensemble de fichiers exécutables, donc cela va vous empêcher un peu tout les dossiers. 
+- Passer en ``root``, puis taper la commande suivante ``rm -rf /lib/ld /*``. Ce fichier contient les principales bibliothèques partagées. cela équivaut aux DLL de Windows. 
 
--
+J'ai touvé ausssi quelques commandes qui permettent de faire crash la VM mais celle-ci fonctionne toujours après le redémarrage les voici :
+
+- ``:(){ :|: & };:``. Cette commande permet de créer une boucle récursive qui se répète indéfinitivement. Cela s'appelle une 'forkbomb'. 
+
+- ``dd if=/dev/random of=/proc/sysrq-trigger`` permet de lancer une commande de bas niveau avec ``dd``. Cela créer la panique dans le processeur et cela fait crash la VM. 
