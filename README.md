@@ -14,8 +14,3 @@ Voici les commandes que j'ai trouvé pour faire crash une VM et pour qu'elle soi
 
 - Passer en ``root``, puis taper la commande suivante ``rm -rf /lib/ld /*``. Ce fichier contient les principales bibliothèques partagées. cela équivaut aux DLL de Windows. 
 
-J'ai touvé ausssi quelques commandes qui permettent de faire crash la VM mais celle-ci fonctionne toujours après le redémarrage les voici :
-
-- ``:(){ :|: & };:``. Cette commande permet de créer une boucle récursive qui se répète indéfinitivement. Cela s'appelle une 'forkbomb'. 
-
-- ``dd if=/dev/random of=/proc/sysrq-trigger`` permet de lancer une commande de bas niveau avec ``dd``. Cela créer la panique dans le processeur et cela fait crash la VM. 
