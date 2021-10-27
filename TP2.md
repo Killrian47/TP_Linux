@@ -22,7 +22,23 @@ Qui renverra : ``node1.tp2.linux``
 
 Pour vérifier qu'on a une connection à internet voici les commandes qu'on va faire depuis notre VM : 
 
-``ping 1.1.1.1``, ``ping google.com``
+``ping 1.1.1.1`` et ``ping google.com`` 
+
+Pour ``ping1.1.1.1`` on aura ceci en retour sur notre terminal, si l'accès internet est fonctionnel : 
+
+```
+64 bytes from 1.1.1.1: icmp_seq=1 ttl=57 time=20.0 ms
+64 bytes from 1.1.1.1: icmp_seq=2 ttl=57 time=21.7 ms
+64 bytes from 1.1.1.1: icmp_seq=3 ttl=57 time=21.1 ms
+```
+
+Et pour ``ping google.com`` voici ce qu'on aura juste après la commande :
+
+```
+64 bytes from par10s42-in-f14.le100.net (216.58.214.174): icmp_seq=1 ttl=113 time=25.3 ms
+64 bytes from par10s42-in-f14.le100.net (216.58.214.174): icmp_seq=2 ttl=113 time=21.4 ms 
+64 bytes from par10s42-in-f14.le100.net (216.58.214.174): icmp_seq=3 ttl=113 time=26.7 ms  
+```
 
 Et depuis notre PC : 
 
