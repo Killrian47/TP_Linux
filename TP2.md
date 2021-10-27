@@ -70,3 +70,16 @@ Reading package lists... Done
 ```
 Si celui-ci n'est pas installé, cela l'installe. 
 
+#### 2 : Lancement du service SSH
+
+Pour lancer un service SSH il faut faire la commande suivante : 
+
+``systemctl start ssh`` 
+
+Et pour vérifier que celui-ci est bien fonctionnel on fait : 
+
+``systemctl status ssh``
+
+Qui nous renverra : 
+
+``[...] Active: **active (running)** since [...]``
