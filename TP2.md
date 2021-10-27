@@ -44,7 +44,7 @@ Et depuis notre PC :
 
 ``ping <ipVM>``
 
--On aura comme retour sur notre terminal ceci : 
+- On aura comme retour sur notre terminal ceci : 
 
 ```
 Réponse de <ipVM> : octets=32 temps<1ms TTL=64
