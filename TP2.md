@@ -24,7 +24,7 @@ Pour vérifier qu'on a une connection à internet voici les commandes qu'on va f
 
 ``ping 1.1.1.1`` et ``ping google.com`` 
 
-Pour ``ping1.1.1.1`` on aura ceci en retour sur notre terminal, si l'accès internet est fonctionnel : 
+- Pour ``ping1.1.1.1`` on aura ceci en retour sur notre terminal, si l'accès internet est fonctionnel : 
 
 ```
 64 bytes from 1.1.1.1: icmp_seq=1 ttl=57 time=20.0 ms
@@ -32,7 +32,7 @@ Pour ``ping1.1.1.1`` on aura ceci en retour sur notre terminal, si l'accès inte
 64 bytes from 1.1.1.1: icmp_seq=3 ttl=57 time=21.1 ms
 ```
 
-Et pour ``ping google.com`` voici ce qu'on aura juste après la commande :
+- Et pour ``ping google.com`` voici ce qu'on aura juste après la commande :
 
 ```
 64 bytes from par10s42-in-f14.le100.net (216.58.214.174): icmp_seq=1 ttl=113 time=25.3 ms
@@ -44,7 +44,7 @@ Et depuis notre PC :
 
 ``ping <ipVM>``
 
-On aura comme retour sur notre terminal ceci : 
+-On aura comme retour sur notre terminal ceci : 
 
 ```
 Réponse de <ipVM> : octets=32 temps<1ms TTL=64
