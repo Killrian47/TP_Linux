@@ -53,7 +53,7 @@ Réponse de <ipVM> : octets=32 temps<1ms TTL=64
 Réponse de <ipVM> : octets=32 temps<1ms TTL=64
 ```
 
-### Partie 1: SSH
+### Partie 1 : SSH
 
 #### 1 : Installation du serveur 
 
