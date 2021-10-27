@@ -102,3 +102,13 @@ Pour se connecter au serveur depuis un client, notre invite de commandes sur not
 
 #### 4 : Modifacation de la configuration du serveur 
 
+### Partie 2 : FTP 
+
+Pour installer un serveur FTP voici la commande ``sudo apt install vsftpd``.
+
+Grâce a la commande `systemctl start` on lance notre serveur, et pour vérifier que celui-ci fonctionne bien on fait `systemctl status vsftpd`  qui nous renvoi : 
+
+`[...] Active :`**`active (running)`**`[...]`
+
+
+
