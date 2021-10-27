@@ -52,3 +52,21 @@ Réponse de <ipVM> : octets=32 temps<1ms TTL=64
 Réponse de <ipVM> : octets=32 temps<1ms TTL=64
 Réponse de <ipVM> : octets=32 temps<1ms TTL=64
 ```
+
+### Partie 1: SSH
+
+#### 1 : Installation du serveur 
+
+Pour installer un serveur SSH il faut faire la commande suivante : 
+
+```
+sudo apt install openssh-server
+```
+Si celui-ci est déjà installé voici le résultat que l'on obtient : 
+```
+Reading package lists... Done 
+[...]
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+```
+Si celui-ci n'est pas installé, cela l'installe. 
+
