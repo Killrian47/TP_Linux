@@ -43,3 +43,12 @@ Et pour ``ping google.com`` voici ce qu'on aura juste après la commande :
 Et depuis notre PC : 
 
 ``ping <ipVM>``
+
+On aura comme retour sur notre terminal ceci : 
+
+```
+Réponse de <ipVM> : octets=32 temps<1ms TTL=64
+Réponse de <ipVM> : octets=32 temps<1ms TTL=64
+Réponse de <ipVM> : octets=32 temps<1ms TTL=64
+Réponse de <ipVM> : octets=32 temps<1ms TTL=64
+```
