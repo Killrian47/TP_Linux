@@ -20,6 +20,10 @@ Qui renverra : ``node1.tp2.linux``
 ### Prérequis : Configuration réseau 
 
 
-Pour vérifier qu'on a une conenction à internet voici les commandes qu'on va faire : 
+Pour vérifier qu'on a une connection à internet voici les commandes qu'on va faire depuis notre VM : 
 
 ``ping 1.1.1.1``, ``ping google.com``
+
+Et depuis notre PC : 
+
+``ping <ipVM>``
