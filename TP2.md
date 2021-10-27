@@ -7,5 +7,12 @@
 Pour qu'il soit pris en compte il faut faire : 
 
 ```bash  
- sudo nano /etc/hostname 
+ sudo nano /etc/hostname  
 ```
+Puis : 
+
+```
+cat /etc/hostname
+```
+
+Qui devrait renvoyer : ``node1.tp2.linux``
