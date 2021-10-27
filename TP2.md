@@ -82,6 +82,6 @@ Et pour vérifier que celui-ci est bien fonctionnel on fait :
 
 Qui nous renverra : 
 
-```
+``
 [...] Active: **active (running)** since [...]
-```
+``
