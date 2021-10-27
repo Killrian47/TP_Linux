@@ -99,3 +99,6 @@ Pour afficher le port utilisé par ssh, on fait le commande : ``ss -ltn``.
 Et on voit que notre ssh et connecter sur le port 22 grâce à l'adresse local ``0.0.0.0:22``
 
 Pour se connecter au serveur depuis un client, notre invite de commandes sur notre pc par exemple, on doit faire : ``ssh username@ipVM`` 
+
+#### 4 : Modifacation de la configuration du serveur 
+
