@@ -83,3 +83,21 @@ Et pour vérifier que celui-ci est bien fonctionnel on fait :
 Qui nous renverra : 
 
 `[...] Active: `**`active (running)`**` since [...]`
+
+#### 3 : Etude du service SSH 
+
+Pour afficher le statu du service on fait la commande ``systemctl status``. 
+
+On aperçoit ceci : `[...]State :`**`running`**``[...]``
+
+
+
+
+
+Pour afficher le port utilisé par ssh, on fait le commande : ``ss -ltn``. 
+
+Et on voit que notre ssh et connecter sur le port 22 grâce à l'adresse local ``0.0.0.0:22``
+
+Pour se connecter au serveur depuis un client, notre invite de commandes sur notre pc par exemple, on doit faire : 
+
+``ssh username@ipVM`` 
