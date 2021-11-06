@@ -90,9 +90,7 @@ Pour afficher le statu du service on fait la commande ``systemctl status``.
 
 On aperçoit ceci : `[...]State :`**`running`**``[...]``
 
-
-
-
+Avec la commande `sudo ss -lptn` on reçoit les processus utiliser par tout nos serveurs, c'est à dire `[...] users:(("sshd",pid=543,fd=3)) [...]` pour notre serveur sshd.
 
 Pour afficher le port utilisé par ssh, on fait le commande : ``ss -ltn``. 
 
@@ -110,5 +108,7 @@ Grâce a la commande `systemctl start` on lance notre serveur, et pour vérifier
 
 `[...] Active :`**`active (running)`**`[...]`
 
+
+Pour trouver quel processus sont liés à notre serveur ftp on fait `sudo ss -ltpn` qui nous renvoit `[...] users:(("vsftpd", pid=527,fd=3)) [...]`
 
 
