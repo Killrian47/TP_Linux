@@ -118,7 +118,7 @@ Pour afficher les ports utilisés par le serveur FTP on utilise la commande `sud
 
 On affiche les logs avec la commande suivante : `sudo journalctl -u vsftpd`
 
-On se connecte au serveur FTP en allant dans le gestionnaire de fichier et on tape `ftp://`*`ipVM`*
+On se connecte au serveur FTP en allant sur un avigateur web et on tape `ftp://`*`ipVM`*
 
 Pour uploader et télécharger un fichier de notre VM à notre PC, on fait un copier coller d'un fichier, peut importe le quel du gestionnaire du fichier de notre VM à celui de notre PC. 
 
