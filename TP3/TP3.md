@@ -2,6 +2,7 @@
 
 ## I. Script carte d'identité 
 
+*Fichier [`/srv/idcard/idcard.sh`](https://github.com/Killrian47/TP_Linux/blob/main/TP3/srv/idcard/idcard.sh)*
 ### Sorti script
 ```
 killian@node1:/srv/idcard$ sudo bash idcard.sh
@@ -31,6 +32,7 @@ Here's your random cat : https://cdn2.thecatapi.com/images/oKIJfbCRy.jpg
 
 ## II. Script youtube-dl
 
+*Fichier [`/srv/yt/yt.sh`](https://github.com/Killrian47/TP_Linux/blob/main/TP3/srv/yt/yt.sh)*
 
 ### Sorti script
 
