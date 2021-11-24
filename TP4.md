@@ -42,6 +42,11 @@ Pour se connecter sur notre VM a notre pc on fait : `ssh `*`user@ipVM`*
 64 bytes from lhr25s01-in-f14.1e100.net (216.58.213.78): icmp_seq=1 ttl=113 time=15.5 ms
 64 bytes from lhr25s01-in-f14.1e100.net (216.58.213.78): icmp_seq=1 ttl=113 time=17.9 ms
 ```
+Ou :
+```
+[root@localhost ~]# ping 1.1.1.1
+
+```
 
 ### Nommage de la machine 
 
