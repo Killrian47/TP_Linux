@@ -124,3 +124,58 @@ LISTEN 0      64           0.0.0.0:2049       0.0.0.0:*
 LISTEN 0      64              [::]:2049          [::]:*
 ```
 
+## Partie 3 : Setup des clients NFS : web.tp6.linux et db.tp6.linux
+
+### Install :
+
+``sudo dnf install nfs-utils`` sur notre VM web ainsi que notre VM db 
+
+### Conf :
+
+``sudo mkdir /srv/backup`` sur nos deux VMs encore
+
+```
+[killian@db /]$ cat /etc/idmpad.conf | grep Domain
+Domain = tp6.linux
+```
+
+```
+[killian@web /]$ cat /etc/idmpad.conf | grep Domain
+Domain = tp6.linux
+```
+
+### Montage :
+
+```
+[killian@web ~]$ df -h | grep backup
+10.5.1.13:/backup/web.tp6.linux  4.9G   20M  4.6G   1% /srv/backup
+
+[killian@web /]$ cd /srv/
+[killian@web srv]$ ls -l
+total 4
+drw-rw-rw-. 2 root root 4096 Nov 30 12:29 backup
+
+[killian@web srv]$ cat /etc/fstab | grep ext4
+10.5.1.13:/backup/web.tp6.linux/ /srv/backup nfs defaults 0 0
+[killian@web ~]$ sudo mount -av
+/                        : ignored
+/boot                    : already mounted
+none                     : ignored
+mount.nfs: timeout set for Fri Dec  3 12:01:49 2021
+mount.nfs: trying text-based options 'vers=4.2,addr=10.5.1.13,clientaddr=10.5.1.12'
+/srv/backup              : successfully mounted
+```
+
+```
+[killian@db ~]$ df -h | grep db
+10.5.1.13:/backup/db.tp6.linux  4.9G   20M  4.6G   1% /srv/backup
+[killian@db ~]$ cat /etc/fstab
+10.5.1.13:/backup/db.tp6.linux/ /srv/backup nfs defaults 0 0
+[killian@db ~]$ sudo mount -av
+/                        : ignored
+/boot                    : already mounted
+none                     : ignored
+mount.nfs: timeout set for Fri Dec  3 12:01:49 2021
+mount.nfs: trying text-based options 'vers=4.2,addr=10.5.1.13,clientaddr=10.5.1.12'
+/srv/backup              : successfully mounted
+```
