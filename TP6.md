@@ -179,3 +179,7 @@ mount.nfs: timeout set for Fri Dec  3 12:01:49 2021
 mount.nfs: trying text-based options 'vers=4.2,addr=10.5.1.13,clientaddr=10.5.1.12'
 /srv/backup              : successfully mounted
 ```
+
+## Partie 4 :
+
+### Script : 
